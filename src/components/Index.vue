@@ -1,5 +1,5 @@
 <template>
-  <div class="common-layout">
+  <div class="common-layout" style="background-color: rgb(253, 241, 246);min-height: 100vh;">
     <el-container>
       <el-header class="header-container">
         <h1 class="header-large">DORO の 表情包收集站</h1>
@@ -33,8 +33,8 @@ import SponsorDialog from './SponsorDialog.vue'
   height: auto;          /* 取消固定高度 */
   min-height: 100px;     /* 你可以根据需要调整 */
   box-sizing: border-box;
-  text-align: center;
-  background-color: #fff;
+  /* text-align: center; */
+  /* background-color: #fff; */
 }
 
 .header-large {
@@ -61,4 +61,12 @@ import SponsorDialog from './SponsorDialog.vue'
     font-size: 16px;
   }
 } */
+.el-container,
+.el-header,
+.el-main,
+.el-footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
 </style>
