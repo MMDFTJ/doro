@@ -1,5 +1,6 @@
 <template>
-  <div class="common-layout" style="background-color: rgb(253, 241, 246);min-height: 100vh;">
+  <div class="full-screen-container" style="background-color: rgb(253, 241, 246);"> 
+    <!-- min-height: 100vh; -->
     <el-container>
       <el-header class="header-container">
         <h1 class="header-large">DORO の 表情包收集站</h1>
@@ -69,4 +70,12 @@ import SponsorDialog from './SponsorDialog.vue'
   padding: 0;
   box-sizing: border-box;
   }
+.full-screen-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
 </style>
